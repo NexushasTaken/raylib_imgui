@@ -1,7 +1,14 @@
 [package]
 name = "imgui_raylib"
 version = "0.7.0"
+authors = ["NexushasTaken", "NexushasTaken <nexushastaken@gmail.com>"]
 edition = "2021"
+description = "A Raylib based backend for imgui"
+readme = "README.md"
+repository = "https://github.com/NexushasTaken/imgui-raylib"
+license = "MIT"
+keywords = ["imgui", "raylib"]
+categories = ["gui"]
 
 [dependencies]
 imgui = { version="0.12.0", features=["docking"] }

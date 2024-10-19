@@ -1,6 +1,6 @@
 # imgui-raylib
 
-This crate is a Raylib based backend platform for imgui-rs
+This crate is a Raylib based backend for imgui-rs
 
 ## Using the library
 
