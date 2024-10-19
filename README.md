@@ -1,4 +1,4 @@
-# imgui-impl-raylib
+# imgui-raylib
 
 This crate is a Raylib based backend platform for imgui-rs
 
