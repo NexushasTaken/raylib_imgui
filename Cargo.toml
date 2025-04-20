@@ -1,6 +1,6 @@
 [package]
 name = "raylib_imgui"
-version = "0.7.0"
+version = "1.0.0"
 authors = ["NexushasTaken", "NexushasTaken <nexushastaken@gmail.com>"]
 edition = "2021"
 description = "A Raylib based backend for imgui"
