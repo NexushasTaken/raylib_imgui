@@ -91,7 +91,7 @@ pub trait RaylibDrawImGui: RaylibDraw {
 }
 
 impl RaylibGui {
-  pub fn new(rl: &mut RaylibHandle, thread: &RaylibThread) -> RaylibGui {
+  pub fn new(rl: &mut RaylibHandle, _thread: &RaylibThread) -> RaylibGui {
     let mut ctx = Context::create();
     ctx.set_platform_name(Some(String::from("imgui_raylib_platform")));
     ctx.set_renderer_name(Some(String::from("imgui_raylib_renderer")));
@@ -612,7 +612,7 @@ unsafe fn enable_scissor(
 ) {
   let [x, y, z, w] = clip_rect;
   let [scale_w, scale_h] = scale;
-  let [fb_width, fb_height] = fb_size;
+  let [_fb_width, fb_height] = fb_size;
   ffi::rlEnableScissorTest();
   ffi::rlScissor(
     (x * scale_w) as i32,

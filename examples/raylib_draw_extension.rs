@@ -1,5 +1,4 @@
-use imgui::{Condition};
-use imgui_raylib::{RaylibGui, RaylibDrawImGui};
+use raylib_imgui::RaylibGui;
 use raylib::prelude::*;
 
 impl<T> RaylibDrawUiExt for T where T: RaylibDraw {}

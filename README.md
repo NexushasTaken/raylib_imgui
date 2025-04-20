@@ -17,8 +17,7 @@ raylib_imgui_rs = "<Latest version here>"
 
 ### In main.rs:
 ```rust
-use imgui::{Condition};
-use imgui_raylib::{RaylibGui};
+use raylib_imgui::RaylibGui;
 use raylib::prelude::*;
 
 fn main() {
@@ -31,12 +30,14 @@ fn main() {
   let mut open = true;
 
   while !rl.window_should_close() {
-    let mut ui = gui.begin(&mut rl);
-    let mut d = rl.begin_drawing(&thread);
-
-    d.clear_background(Color::WHITE);
-
+    let ui = gui.begin(&mut rl);
     ui.show_demo_window(&mut open);
+    // Draw ImGui stuff here
+
+    let mut d = rl.begin_drawing(&thread);
+    d.clear_background(Color::WHITE);
+    // Draw raylib stuff here
+
     gui.end();
   }
 }
