@@ -2,7 +2,7 @@
 
 [![Crates.io Version](https://img.shields.io/crates/v/raylib_imgui_rs)][crates.io]
 
-[crates.io]: https://crates.io/crates/raylib_imgui_rs
+[crates.io]: https://crates.io/crates/raylib_imgui
 
 # <img src="https://github.com/raysan5/raylib/raw/master/logo/raylib_logo_animation.gif" width="64" alt="raylib logo animated"> A Raylib integration with DearImGui in Rust!
 
