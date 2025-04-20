@@ -1,15 +1,16 @@
 [package]
-name = "imgui_raylib"
+name = "raylib_imgui"
 version = "0.7.0"
 authors = ["NexushasTaken", "NexushasTaken <nexushastaken@gmail.com>"]
 edition = "2021"
 description = "A Raylib based backend for imgui"
 readme = "README.md"
-repository = "https://github.com/NexushasTaken/imgui-raylib"
-license = "MIT"
-keywords = ["imgui", "raylib"]
+homepage = "https://github.com/NexushasTaken/raylib_imgui"
+repository = "https://github.com/NexushasTaken/raylib_imgui"
+license-file = "LICENSE"
+keywords = ["gamedev", "graphics", "raylib", "imgui"]
 categories = ["gui"]
 
 [dependencies]
 imgui = { version="0.12.0", features=["docking"] }
-raylib = "5.0.2"
+raylib = "5.5.1"
