@@ -549,7 +549,7 @@ fn to_rl_cursor(cursor: imgui::MouseCursor) -> MouseCursor {
   }
 }
 
-struct Renderer(());
+pub struct Renderer(());
 
 impl Renderer {
   pub fn render(ctx: &mut Context) {
