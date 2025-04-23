@@ -11,9 +11,7 @@ fn main() {
   let mut open = true;
 
   while !rl.window_should_close() {
-    gui.update(&mut rl);
-
-    let ui = gui.new_frame();
+    let ui = gui.begin(&mut rl);
     ui.show_demo_window(&mut open);
     // Draw ImGui stuff here
 
@@ -21,6 +19,6 @@ fn main() {
     d.clear_background(Color::WHITE);
     // Draw raylib stuff here
 
-    gui.render();
+    gui.end();
   }
 }
